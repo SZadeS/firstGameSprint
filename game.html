@@ -7,8 +7,9 @@
 	<title>Game</title>
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/main.css">
-	<script src="js/jquerylocalised.js"></script>
-	<script src="js/jquery.main.js"></script></head>
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script src="js/jquery.main.js"></script>
+ </head>
 
 <body>
 	<div id="wrapper">
@@ -25,9 +26,38 @@
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-xs-12">
-						<div class="time-box">
-							<span id="hint-time" class="inactive"></span>
-							<span id="play-time" class="inactive"></span>
+						<div class="row">
+							<div class="col-sm-4">
+								<div><h1>Score:</h1></div>
+								<div class="boxes pull-left" id="time">6</div>
+							</div>
+							<div class="col-sm-4 text-center">
+								<div><h1>Lives Remaining:</h1></div>
+								<div class="boxes mid" id="life" onclick="lifeVal()">6</div>
+							</div>
+							<div class="col-sm-4 text-right">
+								<div><h1>Timer:</h1></div>
+								<div class="time-box pull-right">
+									<span id="hint-time" class="inactive"></span>
+									<span id="play-time" class="inactive"></span>
+								</div>
+							</div>
+						</div>
+						<div class="pull-left imgs">
+							<div class="img-holder">
+								<img class="img-responsive" src="images/img1.jpeg" alt="">
+							</div>
+							<div class="img-holder">
+								<img class="img-responsive" src="images/img2.jpeg" alt="">
+							</div>
+						</div>
+						<div class="pull-right imgs">
+							<div class="img-holder">
+								<img class="img-responsive" src="images/img3.jpeg" alt="">
+							</div>
+							<div class="img-holder">
+								<img class="img-responsive" src="images/img4.jpeg" alt="">
+							</div>
 						</div>
 						<div class="game-holder clearfix">
 							<div class="game-items inactive hints">
@@ -38,18 +68,6 @@
 									<div class="item"></div>
 									<div class="item"></div>
 									<div class="item"></div>
-								</div>
-								<div class="items-row">
-									<div class="item"></div>
-									<div class="item"></div>
-									<div class="item"></div>
-									<div class="item"></div>
-									<div class="item"></div>
-									<div class="item"></div>
-								</div>
-								<div class="items-row">
-									<div class="item"></div>
-									<div class="item"></div>
 									<div class="item"></div>
 									<div class="item"></div>
 									<div class="item"></div>
@@ -62,6 +80,10 @@
 									<div class="item"></div>
 									<div class="item"></div>
 									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
 								</div>
 								<div class="items-row">
 									<div class="item"></div>
@@ -70,8 +92,88 @@
 									<div class="item"></div>
 									<div class="item"></div>
 									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
 								</div>
 								<div class="items-row">
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+								</div>
+								<div class="items-row">
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+								</div>
+								<div class="items-row">
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+								</div>
+								<div class="items-row">
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+								</div>
+								<div class="items-row">
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+								</div>
+								<div class="items-row">
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+								</div>
+								<div class="items-row">
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
 									<div class="item"></div>
 									<div class="item"></div>
 									<div class="item"></div>
@@ -88,18 +190,6 @@
 									<div class="item"></div>
 									<div class="item"></div>
 									<div class="item"></div>
-								</div>
-								<div class="items-row">
-									<div class="item"></div>
-									<div class="item"></div>
-									<div class="item"></div>
-									<div class="item"></div>
-									<div class="item"></div>
-									<div class="item"></div>
-								</div>
-								<div class="items-row">
-									<div class="item"></div>
-									<div class="item"></div>
 									<div class="item"></div>
 									<div class="item"></div>
 									<div class="item"></div>
@@ -112,6 +202,10 @@
 									<div class="item"></div>
 									<div class="item"></div>
 									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
 								</div>
 								<div class="items-row">
 									<div class="item"></div>
@@ -120,8 +214,88 @@
 									<div class="item"></div>
 									<div class="item"></div>
 									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
 								</div>
 								<div class="items-row">
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+								</div>
+								<div class="items-row">
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+								</div>
+								<div class="items-row">
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+								</div>
+								<div class="items-row">
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+								</div>
+								<div class="items-row">
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+								</div>
+								<div class="items-row">
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+								</div>
+								<div class="items-row">
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
+									<div class="item"></div>
 									<div class="item"></div>
 									<div class="item"></div>
 									<div class="item"></div>
@@ -130,87 +304,11 @@
 									<div class="item"></div>
 								</div>
 							</div>
-							<ul class="list-inline hidden">
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-							</ul>
-							<ul class="list-inline hidden">
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-							</ul>
 							<div class="btn-refresh">
 								<div class="holder">
 									<h1 id="win" class="inactive">You Win</h1>
 									<h1 id="lose" class="inactive">You Lose</h1>
-									<a href="game.html" class="btn btn-success btn-reload">
+									<a href="javascript:void(0)" class="btn btn-success btn-reload">
 										<span class="glyphicon glyphicon-repeat"></span> Restart Game
 									</a>
 								</div>
